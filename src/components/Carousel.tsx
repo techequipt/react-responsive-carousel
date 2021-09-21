@@ -424,12 +424,6 @@ export default class Carousel extends React.Component<Props, State> {
         }
 
         this.props.onClickItem(index, item);
-
-        if (index !== this.state.selectedItem) {
-            this.setState({
-                selectedItem: index,
-            });
-        }
     };
 
     handleOnChange = (index: number, item: React.ReactNode) => {
